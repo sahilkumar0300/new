@@ -16,7 +16,7 @@ stages {
 	}
 		stage('Send Email Notification') {
 			steps {
-`			   emailext(
+			   emailext(
                                 subject: "NestJS App Deployed Successfully on EC2!",
 				body: "Your Nest JS app is Deployed!",
 				to: "${EMAIL}"
